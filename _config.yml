@@ -1,0 +1,91 @@
+title: "Spinaki’s ML & GenAI Notes"
+description: "Math • Code • Experiments"
+url: "https://spinaki.github.io"
+baseurl: ""
+
+# Theme
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: dark
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-include-cache
+
+paginate: 7
+paginate_path: "/page:num/"
+
+include: ["_pages"]
+
+collections:
+  posts:
+    output: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+search: true
+breadcrumbs: true
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo: "spinaki/spinaki.github.io"
+    repo_id: ""
+    category: "General"
+    category_id: ""
+    mapping: pathname
+    reactions_enabled: true
+    theme: preferred_color_scheme
+
+author:
+  name: "Spinaki"
+  avatar: "/assets/avatar.png"
+  bio: "ML • Generative AI • Agentic Systems"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/spinaki"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
+      related: true
+      show_date: true
+      show_last_modified: true
+      toc: true
+      toc_sticky: true
+      toc_label: "On this page"
+      share: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+feed:
+  path: feed.xml
+
+analytics:
+  provider: "none"
+
+permalink: /:categories/:title/
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

@@ -1,0 +1,35 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Sticky TOC width tweak */
+.toc { max-width: 320px; }
+
+/* Wide code blocks */
+.highlighter-rouge pre {
+  overflow-x: auto;
+}
+
+/* Tables slightly smaller for dense metric tables */
+table {
+  font-size: 0.95rem;
+}
+
+/* Copy button styling */
+.copy-code-button {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  cursor: pointer;
+}
+.copy-code-button:hover {
+  background: rgba(0,0,0,0.8);
+}
