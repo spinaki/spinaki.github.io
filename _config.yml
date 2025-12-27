@@ -1,4 +1,4 @@
-title: "Spinaki’s ML & GenAI Notes"
+title: "Pinaki’s ML & GenAI Notes"
 description: "Math • Code • Experiments"
 url: "https://spinaki.github.io"
 baseurl: ""
@@ -45,7 +45,7 @@ comments:
     theme: preferred_color_scheme
 
 author:
-  name: "Spinaki"
+  name: "Pinaki"
   avatar: "/assets/avatar.png"
   bio: "ML • Generative AI • Agentic Systems"
   links:

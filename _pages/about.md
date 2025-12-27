@@ -4,7 +4,7 @@ title: About
 layout: single
 ---
 
-I’m Spinaki. This blog covers:
+I’m Pinaki. This blog covers:
 
 - Efficient LLM training (LoRA, quantization, KV-cache, speculative decoding)
 - Alignment (RLHF, DPO, preference modeling)
