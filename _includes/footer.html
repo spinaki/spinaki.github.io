@@ -1,0 +1,20 @@
+{% include footer/custom.html %}
+
+{% if site.footer.links %}
+  <div class="page__footer-follow">
+    <ul class="social-icons">
+      {% for link in site.footer.links %}
+        <li>
+          <a href="{{ link.url }}">
+            {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
+            {{ link.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>.
+</div>
