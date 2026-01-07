@@ -159,7 +159,7 @@ graph TD
         Inp["Input: The"]
         GateCalc["Gate Calculation (Sigmoid)"]
         Inp --> GateCalc
-        GateCalc -->|Result: 0.01 (CLOSE)| GateVal["Gate Value"]
+        GateCalc -->|Result: 0.01 CLOSE| GateVal["Gate Value"]
     end
 
     subgraph step3["Step 3: Final"]
