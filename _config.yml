@@ -80,7 +80,9 @@ feed:
   path: feed.xml
 
 analytics:
-  provider: "none"
+  provider: "google-gtag"
+  google:
+    measurement_id: "G-J1V4N92PYS"
 
 permalink: /:categories/:title/
 category_archive:
